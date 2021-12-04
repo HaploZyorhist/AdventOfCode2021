@@ -26,13 +26,6 @@ Console.WriteLine($"The winning board total is {final}");
     {
         var result = UpdateBoards(calls[i], boards);
 
-        // part 2
-        if (boards.Count == 1 && result.Count == 1)
-        {
-            finalCall = calls[i];
-            return boards[0];
-        }
-
         // part 1
         //if (result != null)
         //{
@@ -40,6 +33,12 @@ Console.WriteLine($"The winning board total is {final}");
         //    return result;
         //}
 
+        // part 2
+        if (boards.Count == 1 && result.Count == 1)
+        {
+            finalCall = calls[i];
+            return boards[0];
+        }
         if (boards.Count > 1 &&
            result != null)
         {
