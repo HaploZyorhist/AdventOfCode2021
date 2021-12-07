@@ -1,6 +1,4 @@
-﻿using System.Text;
-
-StreamReader sr = File.OpenText(@"..\..\..\Data\Data.txt");
+﻿StreamReader sr = File.OpenText(@"..\..\..\Data\Data.txt");
 string data = sr.ReadToEnd();
 
 // part 1
